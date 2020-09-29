@@ -408,7 +408,7 @@ header {
   align-items: center;
   margin-top: 100px;
 }
-.registration p{
+.registration p {
   margin-top: 31px;
   font-weight: 300;
   font-size: 18px;
@@ -668,6 +668,7 @@ hr {
   font-size: 14px;
   line-height: 16px;
 }
+/* calendar registration menu */
 .registrationCalendar {
   display: none;
   position: fixed;
@@ -703,7 +704,6 @@ hr {
   align-items: center;
 }
 .getCalendarDates {
-  /* display: none; */
   margin-left: 50px;
   background: #2a93c9;
   border-radius: 10px;
@@ -802,10 +802,10 @@ hr {
   margin-top: 10px;
   text-align: center;
 }
-.usersTime {
+/* .usersTime {
   display: flex;
   width: 200px;
-}
+} */
 .usersTimetable {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -931,6 +931,49 @@ hr {
   .footer-end-bg {
     padding: 0 30px 0 30px;
   }
+
+  .registrationCalendar {
+    position: fixed;
+    width: 80%;
+    height: 50%;
+  }
+  .calendarOptios select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1.5px solid #2a93c9;
+    font-size: 18px;
+    outline: none;
+  }
+  .currentDate {
+    margin-top: 27px;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #2a93c9;
+  }
+  .weekDays {
+    margin-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #2a93c9;
+    display: flex;
+    justify-content: space-around;
+  }
+  .monthDays {
+    margin-top: 13px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-row-gap: 5px;
+    justify-items: center;
+  }
+  .monthDays .monthDayBlock {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -962,8 +1005,7 @@ hr {
 
   /* Main menu positionning */
   .bodyFixed {
-    position: fixed;
-    overflow-y: hidden !important;
+    overflow-y: hidden;
   }
   .main-nav {
     position: absolute;
@@ -1365,6 +1407,86 @@ hr {
   }
   .ant-carousel {
     margin-top: 38px;
+  }
+
+  .registrationCalendar {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    padding: 40px 10px 10px 10px;
+  }
+  .calendarOptios select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1.5px solid #2a93c9;
+    font-size: 18px;
+    outline: none;
+  }
+  .currentDate {
+    margin-top: 27px;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #2a93c9;
+  }
+  .weekDays {
+    margin-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #2a93c9;
+    display: flex;
+    justify-content: space-around;
+  }
+  .monthDays {
+    margin-top: 13px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-row-gap: 5px;
+    justify-items: center;
+  }
+  .monthDays .monthDayBlock {
+    cursor: pointer;
+    width: 35px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .getCalendarDates {
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+  .setDoctor {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .calendarMonth {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .currentDate h2 {
+    font-size: 50px;
+  }
+  .usersTimetable {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    justify-items: center;
+    margin: 20px 0 20px 0;
+  }
+  .meetingsTimeGraph h2 {
+    font-size: 18px;
+  }
+  .getBack {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 @media screen and (max-width: 500px) {
