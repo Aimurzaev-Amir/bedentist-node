@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <title>BeDentist</title>
+  </head>
+  <body>
+    <header id="Home">
+      <nav>
+        <div class="mobile-intro">
+          <img class="logo-mobile" src="img/mobile-logo.png" alt="" />
+          <span class="number">8 727 242 42 42</span>
+          <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+          </button>
+          <nav class="main-nav" id="main-nav">
+            <ul>
+              <li><a class="navLink" href="#Home">Home</a></li>
+              <li><a class="navLink" href="#service">Услуги</a></li>
+              <li><a class="navLink" href="#doctors">Доктора</a></li>
+              <li><a class="navLink" href="#news">Новости</a></li>
+              <li><a class="navLink" href="#contacts">Контакты</a></li>
+              <li><a class="navLink" href="#review">Отзывы</a></li>
+              <li><a class="navLink" href="#registration">Записаться</a></li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="menu">
+          <li class="logo"><img src="img/logo 2.png" alt="" /></li>
+          <li><a class="navLink" href="#Home">Home</a></li>
+          <li><a class="navLink" href="#service">Услуги</a></li>
+          <li><a class="navLink" href="#doctors">Доктора</a></li>
+          <li><a class="navLink" href="#news">Новости</a></li>
+          <li><a class="navLink" href="#contacts">Контакты</a></li>
+          <li><a class="review navLink" href="#review">Отзывы</a></li>
+          <li><a class="all navLink" href="#registration">Записаться на прием</a></li>
+        </ul>
+      </nav>
+      <div class="intro wrapper">
+        <div class="intro-text">
+          <h2>Здоровье семьи</h2>
+          <h3>Начинается со здоровья зубов</h3>
+          <p class="mobile-paragraph">
+            Выбор подходящей больницы и врача - важные факторы, которые необходимо учитывать, так
+            как, они существенно влияют на лечение пациента.
+          </p>
+          <div class="intro-buttons">
+            <a class="intro-button" href="#service">Просмотреть услуги</a>
+            <a class="intro-button" href="#registration">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="info wrapper" id="contacts">
+        <div class="intro-info">
+          <div class="card">
+            <h4>График работы</h4>
+            <div class="days">
+              <p class="date">Понедельник - Пятница</p>
+              <p class="time">8:00 - 18:00</p>
+            </div>
+            <div class="days">
+              <p class="date">Суббота</p>
+              <p class="time">8:00 - 18:00</p>
+            </div>
+            <div class="days">
+              <p class="date">Воскресенье</p>
+              <p class="time">8:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Расписание врачей</h4>
+            <p class="text">
+              Для просмотра информации о прогрессе вашего лечения, а также просмотра анализов
+              войдите в личный кабинет.
+            </p>
+            <div class="timetable">
+              <img src="img/calendar 1.png" alt="" />
+              <p>Расписание</p>
+            </div>
+          </div>
+          <div class="card">
+            <h4>В экстренной ситуации</h4>
+            <div class="number-container">
+              <img src="img/phone-call.png" alt="" />
+              <p class="num">8 727 252 42 42</p>
+            </div>
+            <p class="text">
+              В случае необходимости экстренной помощи позвоните по данному номеру для получаения
+              дальнейших инструкций.
+            </p>
+          </div>
+        </div>
+        <div class="line">
+          <div class="fir"></div>
+          <div class="sec"></div>
+          <div class="thi"></div>
+        </div>
+      </div>
+
+      <div class="registrationCalendar wrapper">
+        <span class="close"></span>
+        <div class="flexDisplays">
+          <div class="calendarDates">
+            <div class="calendarOptios">
+              <div class="setDoctor">
+                <label for="docName">Выберите стоматолога:</label>
+                <select name="docName" id="docName">
+                  <option selected value disabled>Выберите стоматолога</option>
+                  <option value="1">Денис Викторович</option>
+                  <option value="2">Наталья Сергеевна</option>
+                  <option value="3">Анна Шкопяк</option>
+                  <option value="4">Лариса Федосеева</option>
+                </select>
+              </div>
+              <div class="calendarMonth">
+                <label for="monthName">Выберите месяц:</label>
+                <select name="monthName" id="monthName">
+                  <option>Выберите месяц</option>
+                  <option value="January">Январь</option>
+                  <option value="February">Февраль</option>
+                  <option value="March">Март</option>
+                  <option value="April">Апрель</option>
+                  <option value="May">Май</option>
+                  <option value="June">Июнь</option>
+                  <option value="July">Июль</option>
+                  <option value="August">Август</option>
+                  <option value="September">Сентябрь</option>
+                  <option value="October">Октябрь</option>
+                  <option value="November">Ноябрь</option>
+                  <option value="December">Декабрь</option>
+                </select>
+                <button class="getCalendarDates">Узнать</button>
+              </div>
+            </div>
+            <div class="calendar">
+              <div class="currentDate">
+                <h2 id="currentDate"></h2>
+                <div class="currentYearMonth">
+                  <p id="currentYear"></p>
+                  <p id="currentMonth"></p>
+                </div>
+              </div>
+              <div class="weekDays">
+                <p>Пн</p>
+                <p>Вт</p>
+                <p>Ср</p>
+                <p>Чт</p>
+                <p>Пт</p>
+                <p>Сб</p>
+                <p>Вс</p>
+              </div>
+              <div class="monthDays" id="monthDays"></div>
+            </div>
+            <div class="popup">
+              <p class="popupText"></p>
+            </div>
+          </div>
+          <div class="meetingTimeTable">
+            <button class="getBack">Календарь</button>
+            <div class="chosenDateBlock">
+              <h2 class="chosenDate"></h2>
+              <h3 class="chosenDoc"></h3>
+            </div>
+            <div class="meetingsTimeGraph">
+              <h2>Выберите свободное время</h2>
+              <div class="usersTimetable"></div>
+              <form action="" class="usersDataForm">
+                <h2>Введите контактную информацию</h2>
+                <input type="text" placeholder="Введите ваше имя" name="name" required />
+                <input type="tel" placeholder="Введите ваш номер телефона" name="number" required />
+                <input type="text" placeholder="Краткое описание причины записи" name="info" />
+                <button class="saveUsersTime">Записаться</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome">
+        <div class="welcome-text wrapper">
+          <h3>Добро пожаловать в BeDentist!</h3>
+          <p>Мы предлагаем стоматологические услуги по лучшим ценам.</p>
+        </div>
+        <div class="welcome-container">
+          <div class="welcome-image">
+            <img src="img/welcome-image.png" alt="" />
+          </div>
+          <div class="welcome-info">
+            <h4>Зарегистрируйтесь для получения бесплатной консультациии</h4>
+            <p>
+              Наша клиника осуществляет такие процедуры, как: лечение, имплантацию, отбеливание
+              зубов, исправление прикуса и многое другое.
+            </p>
+            <a href="#registration">
+              <button class="welcomeButton">Зарегистрироваться</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="wrapper">
+          <div class="serv-text">
+            <h4>Предоставляемый сервис</h4>
+          </div>
+          <div class="serv-cards">
+            <div class="serv-card">
+              <h5>Опытные специалисты</h5>
+              <p>
+                Ваше здоровье - ваш самый важный актив. Вы должны доверить это только лучшим
+                профессионалам.
+              </p>
+            </div>
+            <div class="serv-card">
+              <h5>Опытные специалисты</h5>
+              <p>
+                Ваше здоровье - ваш самый важный актив. Вы должны доверить это только лучшим
+                профессионалам.
+              </p>
+            </div>
+            <div class="serv-card">
+              <h5>Опытные специалисты</h5>
+              <p>
+                Ваше здоровье - ваш самый важный актив. Вы должны доверить это только лучшим
+                профессионалам.
+              </p>
+            </div>
+            <div class="serv-card">
+              <h5>Опытные специалисты</h5>
+              <p>
+                Ваше здоровье - ваш самый важный актив. Вы должны доверить это только лучшим
+                профессионалам.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="works-bg" id="service">
+        <div class="works wrapper">
+          <div class="items-text">
+            <h2>Наши услуги</h2>
+          </div>
+          <div class="items">
+            <div class="item">
+              <img src="img/works-img1.png" alt="" />
+              <p>Лечение зубов</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img2.png" alt="" />
+              <p>Имплантация зубов</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img3.png" alt="" />
+              <p>Эстетическая стоматология</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img4.png" alt="" />
+              <p>Исправление прикуса</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img5.png" alt="" />
+              <p>Отбеливание зубов</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img6.png" alt="" />
+              <p>Зубные протезы</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img7.png" alt="" />
+              <p>Гигиена полости рта</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img8.png" alt="" />
+              <p>Лечение десен</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img9.png" alt="" />
+              <p>Дентальная томография зубов</p>
+            </div>
+            <div class="item">
+              <img src="img/works-img10.png" alt="" />
+              <p>Удаление зубов</p>
+            </div>
+          </div>
+          <div class="layers" id="doctors">
+            <div class="layers-text">
+              <h2>Наши специалисты</h2>
+              <p>
+                Ваше здоровье - ваш самый важный актив. <br />
+                Вы должны доверить это только лучшим профессионалам.
+              </p>
+            </div>
+            <div class="ant-carousel" id="first">
+              <div class="ant-carousel-hider">
+                <div class="layers-cards ant-carousel-list">
+                  <div class="layer-card ant-carousel-element">
+                    <img src="img/doctor1.png" alt="" />
+                    <div class="layers-info">
+                      <div class="layer-status">
+                        <p>
+                          Стоматолог-терапевт <br />
+                          1 категории
+                        </p>
+                      </div>
+                      <h5>Владимир Зеленский</h5>
+                      <div class="layer-contacts">
+                        <div class="layer-number">
+                          <img src="img/phone.png" alt="" />
+                          <p>+7 777 245 22 65</p>
+                        </div>
+                        <div class="layer-email">
+                          <img src="img/email.png" alt="" />
+                          <p>zhum.a@bedentist.kz</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layer-card ant-carousel-element">
+                    <img src="img/doctor2.png" alt="" />
+                    <div class="layers-info">
+                      <div class="layer-status">
+                        <p>
+                          Стоматолог-ортодонт <br />
+                          2 категории
+                        </p>
+                      </div>
+                      <h5>Марина Синюхина</h5>
+                      <div class="layer-contacts">
+                        <div class="layer-number">
+                          <img src="img/phone.png" alt="" />
+                          <p>+7 777 245 32 84</p>
+                        </div>
+                        <div class="layer-email">
+                          <img src="img/email.png" alt="" />
+                          <p>sinyu.m@bedentist.kz</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layer-card ant-carousel-element">
+                    <img src="img/doctor3.png" alt="" />
+                    <div class="layers-info">
+                      <div class="layer-status">
+                        <p>
+                          Стоматолог-ортопед <br />
+                          1 категории
+                        </p>
+                      </div>
+                      <h5>Игорь Петров</h5>
+                      <div class="layer-contacts">
+                        <div class="layer-number">
+                          <img src="img/phone.png" alt="" />
+                          <p>+7 777 841 73 38</p>
+                        </div>
+                        <div class="layer-email">
+                          <img src="img/email.png" alt="" />
+                          <p>petrov.i@bedentist.kz</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layer-card ant-carousel-element">
+                    <img src="img/doctor4.png" alt="" />
+                    <div class="layers-info">
+                      <div class="layer-status">
+                        <p>
+                          Стоматолог-ортопед <br />
+                          1 категории
+                        </p>
+                      </div>
+                      <h5>Сергей Деревянко</h5>
+                      <div class="layer-contacts">
+                        <div class="layer-number">
+                          <img src="img/phone.png" alt="" />
+                          <p>+7 701 256 57 34</p>
+                        </div>
+                        <div class="layer-email">
+                          <img src="img/email.png" alt="" />
+                          <p>sergey.i@bedentist.kz</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ant-carousel-arrow-left"></div>
+              <div class="ant-carousel-arrow-right"></div>
+              <div class="ant-carousel-dots"></div>
+            </div>
+          </div>
+          <div class="registration" id="registration">
+            <img src="img/registrator.png" alt="" />
+            <div class="registration-form" id="registration-form">
+              <h2>Записаться на прием</h2>
+              <p>
+                Для регистрации на прием, пожалуйста, откройте расписание, выберите нужного вам
+                врача и пройдите простую регистрацию.
+              </p>
+              <button class="timetable">Открыть календарь</button>
+            </div>
+          </div>
+        </div>
+
+      <div class="news wrapper" id="news">
+        <div class="news-title">
+          <h2>Последние новости</h2>
+        </div>
+        <div class="ant-carousel wrapper" id="second">
+          <div class="ant-carousel-hider">
+            <div class="ant-carousel-list">
+              <div class="ant-carousel-element">
+                <img src="img/cor-3.png" alt="0" />
+                <p>
+                  Швейцария возглавила рейтинг стран с самыми комфортными условиями для стоматологов
+                </p>
+                <p class="date">СЕНТЯБРЬ 12, 2019</p>
+              </div>
+              <div class="ant-carousel-element">
+                <img src="img/cor-1.png" alt="1" />
+                <p>Гиперчувствительность дентина: этиология и методы диагностики</p>
+                <p class="date">СЕНТЯБРЬ 12, 2019</p>
+              </div>
+              <div class="ant-carousel-element">
+                <img src="img/cor-2.png" alt="2" />
+                <p>Пародонтит связывают с повышенным риском гипертонии у больных</p>
+                <p class="date">СЕНТЯБРЬ 12, 2019</p>
+              </div>
+              <div class="ant-carousel-element">
+                <img src="img/cor-3.png" alt="3" />
+                <p>Пародонтит связывают с повышенным риском гипертонии у больных</p>
+                <p class="date">СЕНТЯБРЬ 12, 2019</p>
+              </div>
+            </div>
+          </div>
+          <div class="ant-carousel-arrow-left"></div>
+          <div class="ant-carousel-arrow-right"></div>
+          <div class="ant-carousel-dots"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerOverlay wrapper">
+        <div class="footer-block">
+          <div class="logo-info">
+            <img src="img/logo footer.png" alt="" />
+            <p>
+              Выбор подходящей больницы и врача - важные факторы, которые необходимо учитывать, так
+              как, они существенно влияют на лечение пациента.
+            </p>
+          </div>
+          <div class="items-links">
+            <h6>Меню</h6>
+            <a href="#Home">Home</a>
+            <a href="#service">Услуги</a>
+            <a href="#doctors">Доктора</a>
+            <a href="#news">Новости</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#review">Отзывы</a>
+          </div>
+          <div class="items-links">
+            <h6>Мы находимся</h6>
+            <div class="contacts-info">
+              <p>Республика Казахстан, Алматинская область, Сатпаева 4а, Алматы 050019</p>
+              <p>info@bedentist.com <br />8 727 252 42 42</p>
+              <p>
+                Пн-Пт: 8:00 - 18:00 <br />
+                Сб: 9:00 - 17:00 <br />
+                Вс: 9:00 - 15:00
+              </p>
+            </div>
+          </div>
+          <div class="items-links">
+            <h6>Услуги</h6>
+            <a href="#service">Лечение зубов</a>
+            <a href="#service">Имплантация зубов</a>
+            <a href="#service">Эстетическая стоматология</a>
+            <a href="#service">Исправление прикуса</a>
+            <a href="#service">Отбеливание зубов</a>
+            <a href="#service">Зубные протезы</a>
+            <a href="#service">Гигиена полости рта</a>
+            <a href="#service">Лечение десен</a>
+            <a href="#service">Дентальная томография зубов</a>
+            <a href="#service">Удаление зубов</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-end-bg">
+        <div class="footer-end wrapper">
+          <p>Правила и условия | Политика конфиденциальности</p>
+          <p>© BEDENTIST, 2019. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="dal.js"></script>
+    <script src="ant.js"></script>
+  </body>
+</html>

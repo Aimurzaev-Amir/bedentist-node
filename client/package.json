@@ -1,0 +1,32 @@
+{
+  "name": "bedentist",
+  "version": "1.0.0",
+  "description": "Node.js project for dentist clinic. Project include authorization on meeting form and admin panel",
+  "main": "script.js",
+  "scripts": {
+    "start": "index.html",
+    "dev": "nodemon -e js, html, css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aimurzaev-Amir/bedentist.git"
+  },
+  "keywords": [
+    "dental",
+    "clinic",
+    "node.js",
+    "axios",
+    "admin",
+    "panel"
+  ],
+  "author": "Amir Aimurzayev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aimurzaev-Amir/bedentist/issues"
+  },
+  "homepage": "https://github.com/Aimurzaev-Amir/bedentist#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}

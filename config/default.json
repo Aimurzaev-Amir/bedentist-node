@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "mongoURI": "mongodb+srv://bedentist:bedentistApp123@cluster0.fgxcc.mongodb.net/bedentistMeetingsDatabase?retryWrites=true&w=majority"
+}
+ 
