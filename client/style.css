@@ -562,14 +562,14 @@ div.ant-carousel-arrow-right {
 }
 
 div.ant-carousel-arrow-left {
-  left: -40px;
+  left: -30px;
   top: 40%;
   display: block;
   background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
 }
 
 div.ant-carousel-arrow-right {
-  right: -40px;
+  right: -30px;
   top: 40%;
   display: block;
   background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
@@ -806,7 +806,7 @@ hr {
   padding-top: 7px;
 }
 .meetingsTimeGraph {
-  height: 85%;
+  /* height: 85%; */
   margin-top: 10px;
   text-align: center;
 }
@@ -852,11 +852,12 @@ hr {
 .popup {
   display: none;
   position: absolute;
-  top: 300px;
+  top: 250px;
   width: 100%;
   background-color: #fff;
   border-radius: 30px;
   border: 1px solid #2a93c9;
+  z-index: 99999;
 }
 .popup p {
   padding: 30px 0 30px 0;
@@ -1096,6 +1097,12 @@ hr {
   .main-nav li:nth-child(5) a {
     transition: all 275ms 375ms;
   }
+  .main-nav li:nth-child(6) a {
+    transition: all 275ms 425ms;
+  }
+  .main-nav li:nth-child(7) a {
+    transition: all 275ms 475ms;
+  }
 
   /* Decoration */
   .main-nav ul,
@@ -1207,6 +1214,7 @@ hr {
     font-size: 43px;
     line-height: 50px;
     margin-top: 30%;
+    max-width: 250px;
   }
   .intro-text h3 {
     font-size: 23px;
@@ -1333,10 +1341,10 @@ hr {
     max-width: 650px;
   }
   #first .ant-carousel-element {
-    max-width: 310px;
+    max-width: 295px;
   }
   #second .ant-carousel-element {
-    max-width: 310px;
+    max-width: 295px;
   }
   .registration {
     display: flex;
@@ -1418,7 +1426,6 @@ hr {
   .registrationCalendar {
     position: fixed;
     width: 80%;
-    height: 85%;
     padding: 40px 10px 10px 10px;
   }
   .calendarOptios select {

@@ -26,12 +26,6 @@ for (let i = 0; i < navLink.length; i++) {
     nav.classList.remove("is-open");
   });
 }
-
-let doneImage = document.getElementById("doneImage");
-// let send = document.getElementById("send");
-let loading = document.getElementById("loading");
-let messageSend = document.querySelector(".messageSend");
-
 // CALENDAR MEETING SETTINGS
 
 // popup
@@ -44,38 +38,8 @@ let popupFunction = (text) => {
     popup.style.display = "none";
   }, 1000);
 };
-// time and users arrays
-const timeArr = [
-  {
-    hour: "9:00",
-  },
-  {
-    hour: "10:00",
-  },
-  {
-    hour: "11:00",
-  },
-  {
-    hour: "12:00",
-  },
-  {
-    hour: "13:00",
-  },
-  {
-    hour: "14:00",
-  },
-  {
-    hour: "15:00",
-  },
-  {
-    hour: "16:00",
-  },
-  {
-    hour: "17:00",
-  },
-];
 
-let usersArr = [];
+
 // calendar window positioning
 let registrationCalendar = document.querySelector(".registrationCalendar");
 let calendarBackgroundBlock = document.querySelector(".calendarBackgroundBlock");
@@ -163,7 +127,7 @@ let clickedDay;
 let clickedMonth;
 let clickedTime;
 let clickedDoc;
-let arr = [];
+
 
 //on change doc name select element
 docName.addEventListener("change", function () {
@@ -265,7 +229,8 @@ function setMonthDays() {
     newP.addEventListener("click", function (e) {
       if (
         e.currentTarget.innerText !== "" &&
-        docName.options[docName.selectedIndex].text !== "Выберите стоматолога"
+        docName.options[docName.selectedIndex].text !== "Выберите стоматолога" &&
+        monthName.options[monthName.selectedIndex].value !== "Выберите месяц"
       ) {
         clickedDay = e.currentTarget.innerText;
         currentDate.innerHTML = e.currentTarget.innerText;
@@ -278,11 +243,12 @@ function setMonthDays() {
           e.currentTarget.innerText + " " + monthName.options[monthName.selectedIndex].text;
         chosenDoc.innerHTML = docName.options[docName.selectedIndex].text;
       } else {
-        popupFunction("Пожалуйста, выберите нужного стоматолога из списка!");
+        popupFunction("Пожалуйста, выберите нужного стоматолога из списка и месяц!");
       }
     });
   });
 }
+setMonthDays()
 // on change month select element
 monthName.addEventListener("change", setMonthDays);
 
