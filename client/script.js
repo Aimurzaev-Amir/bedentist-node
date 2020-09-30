@@ -116,6 +116,8 @@ currentDate.innerHTML = currentMonthDay;
 // get current year and set
 let currentYear = document.getElementById("currentYear");
 let currentYearDate = new Date().getFullYear();
+let currentYearPrivacy = document.getElementById("currentYearPrivacy");
+currentYearPrivacy.innerHTML = `© BEDENTIST, ${currentYearDate}. Все права защищены`;
 currentYear.innerHTML = currentYearDate;
 // get current month
 let currentMonth = document.getElementById("currentMonth");
@@ -177,7 +179,7 @@ function setMonthDays() {
   monthDays.innerHTML = "";
 
   // get days or week for clicked month
-  let month = monthName.value === "Выберите месяц" ? "September" : monthName.value ;
+  let month = monthName.value === "Выберите месяц" ? "September" : monthName.value;
   let year = new Date().getFullYear();
   let dayOfWeek = new Date(month + "1," + year).getDay();
 

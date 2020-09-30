@@ -171,6 +171,9 @@ header {
 .number {
   white-space: nowrap;
 }
+.number a {
+  color: #fff;
+}
 .card .number-container {
   display: flex;
   margin-top: 18px;
@@ -180,10 +183,11 @@ header {
   width: 40px;
   height: 40px;
 }
-.card p.num {
+.card a.num {
   font-size: 28px;
   line-height: 33px;
   padding-left: 20px;
+  color: #2a93c9;
 }
 .line {
   display: grid;
@@ -389,6 +393,10 @@ header {
 .layer-contacts .layer-number {
   display: flex;
   margin-top: 18px;
+}
+.layer-contacts .layer-number a,
+.layer-contacts .layer-email a {
+  color: #000;
 }
 .layer-contacts .layer-number img {
   max-width: 9px;
@@ -1193,19 +1201,17 @@ hr {
   }
   .intro {
     margin-top: 0px;
-    padding: 0 58px 0 20px;
-  }
-  .intro-text {
-    padding-right: 58px;
+    padding: 0 38px 0 20px;
   }
   .intro-text h2 {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 127px;
+    margin-top: 30%;
   }
   .intro-text h3 {
     font-size: 23px;
     line-height: 27px;
+    margin-bottom: 33px;
   }
   .intro-text p.mobile-paragraph {
     display: block;
