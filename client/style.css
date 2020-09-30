@@ -16,7 +16,8 @@ nav {
 }
 header {
   background-image: url(img/Background.png);
-  background-size: 100%;
+  background-size: cover;
+  background-position-x: 80%;
   background-repeat: no-repeat;
   height: calc(var(--vh, 1vh) * 100);
 }
